@@ -554,6 +554,7 @@ void ListView::selectedItemEvent(TouchEventType event)
     
 void ListView::interceptTouchEvent(TouchEventType event, Widget *sender, Touch* touch)
 {
+    CCASSERT(sender != nullptr, "sender should not be NULL!");
     ScrollView::interceptTouchEvent(event, sender, touch);
     if (!_touchEnabled)
     {
@@ -571,7 +572,7 @@ void ListView::interceptTouchEvent(TouchEventType event, Widget *sender, Touch* 
             }
             parent = dynamic_cast<Widget*>(parent->getParent());
         }
-        if (sender->isHighlighted()) {
+        if (sender && sender->isHighlighted()) {
             selectedItemEvent(event);
         }
     }

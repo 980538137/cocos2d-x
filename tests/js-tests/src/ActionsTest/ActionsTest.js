@@ -2920,31 +2920,39 @@ var arrayOfActionsTest = [
     ActionScale,
     ActionRotate,
     ActionRotateXY,
+
     ActionSkew,
     ActionSkewRotateScale,
     ActionJump,
     ActionBezier,
     ActionBezierToCopy,
+
     Issue1008,
     ActionCardinalSpline,
     ActionCatmullRom,
     ActionBlink,
     ActionFade,
+
     ActionTint,
     ActionSequence,
     ActionSequence2,
     ActionSpawn,
     ActionReverse,
+
+                          // 20
     ActionDelayTime,
     ActionRepeat,
     ActionRepeatForever,
     ActionRotateToRepeat,
     ActionRotateJerk,
+
     ActionCallFunc1,
     ActionCallFunc2,
     ActionCallFunc3,
     ActionReverseSequence,
     ActionReverseSequence2,
+
+                          // 30
 
     ActionFollow,
     ActionTargeted,
@@ -2958,6 +2966,7 @@ var arrayOfActionsTest = [
 
     PauseResumeActions,
     Issue1305,
+                          // 40
     Issue1305_2,
     Issue1288,
     Issue1288_2,

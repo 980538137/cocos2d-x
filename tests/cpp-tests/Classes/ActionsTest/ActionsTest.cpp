@@ -42,31 +42,38 @@ ActionsTests::ActionsTests()
     ADD_TEST_CASE(ActionRotate);
     ADD_TEST_CASE(ActionRotateBy3D);
     ADD_TEST_CASE(ActionScale);
+
     ADD_TEST_CASE(ActionSkew);
     ADD_TEST_CASE(ActionRotationalSkew);
     ADD_TEST_CASE(ActionRotationalSkewVSStandardSkew);
     ADD_TEST_CASE(ActionSkewRotateScale);
     ADD_TEST_CASE(ActionJump);
+
     ADD_TEST_CASE(ActionCardinalSpline);
     ADD_TEST_CASE(ActionCatmullRom);
     ADD_TEST_CASE(ActionBezier);
     ADD_TEST_CASE(ActionBlink);
     ADD_TEST_CASE(ActionFade);
+
     ADD_TEST_CASE(ActionTint);
     ADD_TEST_CASE(ActionAnimate);
     ADD_TEST_CASE(ActionSequence);
     ADD_TEST_CASE(ActionSequence2);
     ADD_TEST_CASE(ActionSequence3);
+
+    // 20
     ADD_TEST_CASE(ActionRemoveSelf);
     ADD_TEST_CASE(ActionSpawn);
     ADD_TEST_CASE(ActionSpawn2);
     ADD_TEST_CASE(ActionReverse);
     ADD_TEST_CASE(ActionDelayTime);
+
     ADD_TEST_CASE(ActionRepeat);
     ADD_TEST_CASE(ActionRepeatForever);
     ADD_TEST_CASE(ActionRotateToRepeat);
     ADD_TEST_CASE(ActionCallFunction);
     ADD_TEST_CASE(ActionCallFuncN);
+
     ADD_TEST_CASE(ActionCallFuncND);
     ADD_TEST_CASE(ActionReverseSequence);
     ADD_TEST_CASE(ActionReverseSequence2);
@@ -78,18 +85,23 @@ ActionsTests::ActionsTests()
     ADD_TEST_CASE(ActionMoveStacked);
     ADD_TEST_CASE(ActionMoveJumpStacked);
     ADD_TEST_CASE(ActionMoveBezierStacked);
+
+    // 40
     ADD_TEST_CASE(ActionCardinalSplineStacked);
     ADD_TEST_CASE(ActionCatmullRomStacked);
     ADD_TEST_CASE(PauseResumeActions);
     ADD_TEST_CASE(ActionResize);
     ADD_TEST_CASE(Issue1305);
     ADD_TEST_CASE(Issue1305_2);
+
     ADD_TEST_CASE(Issue1288);
     ADD_TEST_CASE(Issue1288_2);
     ADD_TEST_CASE(Issue1327);
     ADD_TEST_CASE(Issue1398);
     ADD_TEST_CASE(Issue2599)
     ADD_TEST_CASE(ActionFloatTest);
+
+    ADD_TEST_CASE(ActionFollow);
 }
 
 std::string ActionsDemo::title() const

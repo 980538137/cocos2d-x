@@ -419,6 +419,7 @@ void SpriteBatchNode::reserveCapacity(ssize_t newCapacity)
 
 ssize_t SpriteBatchNode::rebuildIndexInOrder(Sprite *parent, ssize_t index)
 {
+    CCASSERT( parent != nullptr, "Argument must be non-nullptr");
     CCASSERT(index>=0 && index < _children.size(), "Invalid index");
 
     auto& children = parent->getChildren();
@@ -450,6 +451,8 @@ ssize_t SpriteBatchNode::rebuildIndexInOrder(Sprite *parent, ssize_t index)
 
 ssize_t SpriteBatchNode::highestAtlasIndexInChild(Sprite *sprite)
 {
+    CCASSERT( sprite != nullptr, "Argument must be non-nullptr");
+
     auto& children = sprite->getChildren();
 
     if (children.size() == 0)
@@ -464,6 +467,8 @@ ssize_t SpriteBatchNode::highestAtlasIndexInChild(Sprite *sprite)
 
 ssize_t SpriteBatchNode::lowestAtlasIndexInChild(Sprite *sprite)
 {
+    CCASSERT( sprite != nullptr, "Argument must be non-nullptr");
+
     auto& children = sprite->getChildren();
 
     if (children.size() == 0)
@@ -478,6 +483,8 @@ ssize_t SpriteBatchNode::lowestAtlasIndexInChild(Sprite *sprite)
 
 ssize_t SpriteBatchNode::atlasIndexForChild(Sprite *sprite, int nZ)
 {
+    CCASSERT( sprite != nullptr, "Argument must be non-nullptr");
+
     auto& siblings = sprite->getParent()->getChildren();
     auto childIndex = siblings.getIndex(sprite);
 
@@ -538,6 +545,8 @@ ssize_t SpriteBatchNode::atlasIndexForChild(Sprite *sprite, int nZ)
 // addChild helper, faster than insertChild
 void SpriteBatchNode::appendChild(Sprite* sprite)
 {
+    CCASSERT( sprite != nullptr, "Argument must be non-nullptr");
+
     _reorderChildDirty=true;
     sprite->setBatchNode(this);
     sprite->setDirty(true);
@@ -575,6 +584,8 @@ void SpriteBatchNode::appendChild(Sprite* sprite)
 
 void SpriteBatchNode::removeSpriteFromAtlas(Sprite *sprite)
 {
+    CCASSERT( sprite != nullptr, "Argument must be non-nullptr");
+
     // remove from TextureAtlas
     _textureAtlas->removeQuadAtIndex(sprite->getAtlasIndex());
 

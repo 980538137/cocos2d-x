@@ -45,7 +45,7 @@ bool PUColorAffectorTranslator::translateChildProperty( PUScriptCompiler* compil
         if (passValidatePropertyNumberOfValuesRange(compiler, prop, token[TOKEN_TIME_COLOUR], 4, 5))
         {
             int n = 0;
-            float time;
+            float time = 0;
             Vec4 colour;
             PUAbstractNodeList::const_iterator i = prop->values.begin();
             PUAbstractNodeList::const_iterator end = prop->values.end();

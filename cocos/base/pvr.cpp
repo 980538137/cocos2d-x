@@ -576,9 +576,9 @@ static void PVRDecompress(AMTC_BLOCK_STRUCT *pCompressedData,
 	int BlkXDim, BlkYDim;
     
 	int StartX, StartY;
-    
-	int ModulationVals[8][16];
-	int ModulationModes[8][16];
+
+    int ModulationVals[8][16];
+    int ModulationModes[8][16];
     
 	int Mod, DoPT;
     
