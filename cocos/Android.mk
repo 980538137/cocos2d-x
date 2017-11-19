@@ -330,9 +330,15 @@ $(call import-module,editor-support/cocostudio)
 $(call import-module,network)
 $(call import-module,ui)
 $(call import-module,extensions)
+<<<<<<< HEAD
 #$(call import-module,Box2D)
 #$(call import-module,bullet/prebuilt/android)
 #$(call import-module,recast)
+=======
+$(call import-module,Box2D/prebuilt/android)
+$(call import-module,bullet/prebuilt/android)
+$(call import-module,recast)
+>>>>>>> bceb242ebd9c0bf60fdf1cfcf671efc47f07e1ee
 # $(call import-module,curl/prebuilt/android)
 $(call import-module,websockets/prebuilt/android)
 $(call import-module,openssl/prebuilt/android)
